@@ -1,0 +1,16 @@
+[package]
+name = "token-wavelet"
+version = "0.1.0"
+edition = "2021"
+description = "AI token spending intelligence: wavelet decomposition, conservation law budgeting, spectral analysis"
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+plotters = { version = "0.3", default-features = false, features = ["svg_backend", "line_series"] }
+thiserror = "1"
+csv = "1"
+rayon = "1"
+
+[dev-dependencies]
+tempfile = "3"
